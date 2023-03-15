@@ -12,7 +12,7 @@ public class InterfaceCreator {
     public Predicate<List<String>> isValuesStartWithUpperCase() {
         return list -> {
             for (String string : list) {
-                if (Character.isLowerCase(string.charAt(0))) {
+                if (!(Character.isUpperCase(string.charAt(0)))) {
                     return false;
                 }
             }
